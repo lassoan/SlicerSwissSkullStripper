@@ -81,6 +81,6 @@ foreach(DEFAULT_ATLAS_FILE ${DEFAULT_ATLAS_FILES})
     ${CMAKE_BINARY_DIR}/${Slicer_CLIMODULES_BIN_DIR}/SwissSkullStripperDefaultAtlas/${DEFAULT_ATLAS_FILE}
     COPYONLY)
   install(
-    FILES ${CMAKE_BINARY_DIR}/${Slicer_CLIMODULES_BIN_DIR}/${DEFAULT_ATLAS_FILE}
+    FILES ${CMAKE_BINARY_DIR}/${Slicer_CLIMODULES_BIN_DIR}/SwissSkullStripperDefaultAtlas/${DEFAULT_ATLAS_FILE}
     DESTINATION ${Slicer_INSTALL_CLIMODULES_BIN_DIR}/SwissSkullStripperDefaultAtlas COMPONENT Runtime)
 endforeach()
