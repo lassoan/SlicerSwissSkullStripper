@@ -18,6 +18,7 @@ include(${Slicer_USE_FILE})
 
 #-----------------------------------------------------------------------------
 add_subdirectory(SwissSkullStripper)
+add_subdirectory(SwissSkullStripperSampleData)
 
 #-----------------------------------------------------------------------------
 include(${Slicer_EXTENSION_CPACK})
