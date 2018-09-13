@@ -52,7 +52,12 @@ SEMMacroBuildCLI(
   TARGET_LIBRARIES ${MODULE_TARGET_LIBRARIES}
   INCLUDE_DIRECTORIES ${MODULE_INCLUDE_DIRECTORIES}
   ADDITIONAL_SRCS ${MODULE_SRCS}
+  EXECUTABLE_ONLY
   )
+# EXECUTABLE_ONLY is specified to prevent running the module as a DLL.
+# Atlas files can only be found relative to an executable file.
+# If module would loaded as DLL then we didn't know location of the executable
+# and thus the location of atlas files could not be found.
 
 #-----------------------------------------------------------------------------
 if(BUILD_TESTING)
